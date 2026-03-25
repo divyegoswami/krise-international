@@ -637,6 +637,20 @@ ol {
   gap: 0.72rem;
 }
 
+.footer-brand-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
 .footer-brand strong,
 .footer-col h4 {
   color: var(--color-white);

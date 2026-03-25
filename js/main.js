@@ -59,7 +59,10 @@ function injectFooter() {
   footerHost.innerHTML = `
     <div class="footer-grid">
       <div class="footer-brand">
-        <strong>Krise International</strong>
+        <div class="footer-brand-head">
+          <img class="footer-logo" src="logo.png" alt="Krise International logo" width="48" height="48" loading="lazy" decoding="async">
+          <strong>Krise International</strong>
+        </div>
         <p>New Delhi-based global trading company specializing in industrial machinery, polymers, rubber products, moulds, and sheet metal tools.</p>
         <a href="mailto:sales@kriseinternational.com">sales@kriseinternational.com</a>
       </div>
