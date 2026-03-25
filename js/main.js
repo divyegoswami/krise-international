@@ -26,7 +26,15 @@ function injectHeader() {
   headerHost.innerHTML = `
     <div class="nav-wrap">
       <a class="brand" href="index.html" aria-label="Krise International Home">
-        <span class="brand-mark"><i data-lucide="factory"></i></span>
+        <img
+          class="brand-logo"
+          src="logo.png"
+          alt="Krise International logo"
+          width="44"
+          height="44"
+          loading="eager"
+          decoding="async"
+        >
         <span class="brand-text">
           <strong>Krise International</strong>
           <span>Industrial Trading Partner</span>
