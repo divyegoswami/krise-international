@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Krise International for industrial trading inquiries, machinery sourcing, polymers, moulds, and tooling requirements.">
+  <title>Contact & Inquiry | Krise International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body>
+  <header data-include="header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Contact</span>
+        <h1>Contact &amp; Inquiry</h1>
+        <p class="lead">Connect with Krise International to discuss sourcing requirements for machinery, polymers, rubber products, moulds, and sheet metal tools.</p>
+      </div>
+    </section>
+
+    <section class="section" id="inquiry">
+      <div class="container grid cards-2">
+        <article class="surface reveal">
+          <h2 style="margin-bottom: 1rem;">Contact Information</h2>
+          <ul class="client-list">
+            <li class="list-item"><strong>Contact Persons:</strong> Mr. Rakesh &amp; Mr. Naveen Grover</li>
+            <li class="list-item"><strong>Email:</strong> <a href="mailto:sales@kriseinternational.com">sales@kriseinternational.com</a></li>
+            <li class="list-item"><strong>Location:</strong> New Delhi, India</li>
+          </ul>
+        </article>
+
+        <article class="surface reveal">
+          <h2 style="margin-bottom: 1rem;">Send Inquiry</h2>
+          <form id="inquiry-form" class="form-grid" novalidate>
+            <div class="form-two form-grid">
+              <div class="form-group">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="fullName" required>
+                <div class="field-error" id="full-name-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="company-name">Company Name *</label>
+                <input type="text" id="company-name" name="companyName" required>
+                <div class="field-error" id="company-name-error" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <div class="form-two form-grid">
+              <div class="form-group">
+                <label for="country">Country *</label>
+                <input type="text" id="country" name="country" required>
+                <div class="field-error" id="country-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <div class="field-error" id="email-error" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <div class="form-two form-grid">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+                <div class="field-error" id="phone-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="product-interest">Product of Interest *</label>
+                <select id="product-interest" name="productInterest" required>
+                  <option value="">Select a category</option>
+                  <option value="Injection Moulding Machines">Injection Moulding Machines</option>
+                  <option value="Polymers">Polymers</option>
+                  <option value="Rubber Products">Rubber Products</option>
+                  <option value="Moulds">Moulds</option>
+                  <option value="Sheet Metal Tools">Sheet Metal Tools</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="field-error" id="product-interest-error" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Specifications *</label>
+              <textarea id="message" name="message" required></textarea>
+              <div class="field-error" id="message-error" aria-live="polite"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            <div id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer data-include="footer"></footer>
+</body>
+</html>
